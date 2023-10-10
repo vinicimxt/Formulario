@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: darkorchid;
+}
+.item{
+    /*width: 400px;*/
+}
+@media screen and (max-width:400px){
+    .item{
+        width: 100%;
+        font-size: 30px;
+    }
+    .container{
+        background-color: red;
+    }
+}
+@media screen and (max-width:700px) and (min-width:401px) {
+    .container{
+        background-color: rgb(40, 174, 214);
+    }
+}
+
+
+
+img , .container{
+    border-radius: 39px;
+    background: #db6666;
+    box-shadow: inset -15px -15px 24px #c55c5c,
+                inset 15px 15px 24px #f17070;
+
+}
