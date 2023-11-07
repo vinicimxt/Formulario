@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
+.content{
+    font-size: 15px;
+    background-color: aqua;
+    width: 100em;
+    height: 100vh;
+}
+
+p{
+    font-size: 2rem;
+}
+
+/*o espaço pega 2 classes */.teste.div1{
+    color: springgreen;
+    font-size: 20px;
+}
+#teste .teste{
+
+}
+p, h2{
+font-size: 6rem;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.filha{
+    background-color: blueviolet;
+    height: 2rem; /*20px*/
+    width: 50vw;
+}
+
+.content2{
+    background-color: chocolate;
+    height: 100vh;
+}
+[title="melhor_filme"]{
+font-size: 3rem;
+}
+/* ~ seleciona todos,+ só 1*/.filha1 ~ div{
+    width: 20vw;
+    height: 15vh;
+    background-color: yellowgreen;
+}
+.filha1 > p{
+    color: green;
+    font-size: 2rem;
+}
+li:nth-child(4){
+    border-style: double;
+    border-color: cadetblue;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>texto1</p>
+        <p>texto2</p>
+        <div class="filha"></div>
+    </div>
+    <div class="content2">
+        <div class="filha1">
+           <span> <p>Este é um texto isso é um span esse é o final</p></span>
+        </div>
+        <div class="filha2"></div>
+        <div class="filha3"></div>
+        <ul>
+            <li class="teste div1">A Pedra Filosofal</li>
+            <li>A Câmara Secreta</li>
+            <li title="melhor_filme">O Prisioneiro de Azkabam</li> <!---title serve para quando passar o mouse aparecer o titulo dado-->
+            <li>O Cálice de Fogo</li>
+        </ul>
+    </div>
+</body>
+</html>
